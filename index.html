@@ -14,17 +14,31 @@
             display: flex;
             justify-content: space-around; /* Képek közötti távolság */
             align-items: center; /* Függőleges középre igazítás */
-            margin: 20px; /* Külső margó */
+            padding: 20px;
+            margin: 10px 20px 30px 40px; /* Felül, jobbra, alul, balra */
+            /*border: 6px solid #ccc;*/
         }
         img {
             max-width: 23%; /* Képek méretének beállítása */
             height: auto; /* Magasság automatikus beállítása */
             border-radius: 8px; /* Kerekített sarkok */
         }
+        .cardimg  {  
+            align-items: center; /* Függőleges középre igazítás */
+            text-align: center; /* Kép középre igazítása */
+            align-items: center; /* Függőleges középre igazítás */
+
+            max-width: 200%; /* Képek méretének beállítása */
+            height: auto; /* Magasság automatikus beállítása */
+            display: flex; /* Flexbox aktiválása */
+            justify-content: center; /* Vízszintes középre igazítás */
+            align-items: center; /* Függőleges középre igazítás (opcionális) */
+            height: 100vh; /* 100% magasság a viewportban */
+         }
     </style>
     <style>
         body {
-            margin: 0;
+            margin: 20px;
             font-family: Arial, sans-serif; /* Betűtípus beállítása */
         }
         .header {
@@ -37,20 +51,23 @@
             color: white; /* Szöveg színe */
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Szöveg árnyék */
         }
-        .btn{ 
+        .btn { 
 
+        }
+        p {
+            margin: 20px; /* Külső margó a szöveg körül */
+            padding: 10px; /* Belső margó a szöveg körül */
         }
     </style>
     <header>
         <header class="header">
             <h1>Üdvözöllek a Bemutatkozó Oldalomon! <span class="badge text-bg-info">Ismerj meg!</span></h1>
             <li><a class="btn btn-primary" href="#about"  >Ki is vagyok én?</a></li>
-            <li><a class="btn btn-danger" href="#services">Családom és otthonom</a></li>
-            <li><a class="btn btn-info" href="#contact"   >Hobbijaim</a></li>
-            <li><a class="btn btn-warning" href="#map"    >Elérhetőségeim</a></li>
-            <li><a class="btn btn-primary" href="#about"  >Az álmom</a></li>
-            <li><a class="btn btn-primary" href="#about"  >Hitem</a></li>
-
+            <li><a class="btn btn-danger" href="#fam">Családom és otthonom</a></li>
+            <li><a class="btn btn-info" href="#hobbi"   >Hobbijaim</a></li>
+            <li><a class="btn btn-primary" href="#alom"  >Az álmom</a></li>
+            <li><a class="btn btn-primary" href="#hit"  >Hitem</a></li>
+            <li><a class="btn btn-warning" href="#contact"    >Elérhetőségeim</a></li>
         </header>
         
 
@@ -68,19 +85,18 @@
     <section id="about">
         <h2>Ki is vagyok én?</h2>
         <span class="placeholder col-12 bg-dark"></span>
+        <div class="container">
+            <img src="fotok/eszter2.jpg" alt="Rólam" width="350" height="450 margin: 10px 20px 30px 40px;
+        " class="profile-photo">
         <p>Kaló Eszter Krisztina vagyok, 19 éves és a 4 gyerekes család 3. gyermeke vagyok. Noszvajon élek a családommal és rengeteg állatainkkal. Nagyon szeretem a nagy családom és azt hiszem meghatározó is ezt az életemben. 
             Noszvajon élek amitóta eszemet tudom, ez az otthonom. 
             Idén kezdtem az egyetemet Budapesten a Budapesti Műszaki és Gazdaságtudományi Egyetemen. Választott szakom az Ipari termék- és formatervező mérnöki lett. 
             Azt hiszem az indok amiért ezt a szakot választottam, az a kreatív energiáim és a hatalamas tudásvágyam keveredése volt. Nagyon szeretek rajzolni és csak úgy valamit alkotni a kezemmel.
             Az életemnen továbba fotnos szerepet tölt be a hit. Szoktam szolgálni a noszvaji Református gyüleketebe és második otthonomnak is tekintem ezt a közösséget.
         </p>
-        <img src="fotok/eszter2.jpg" alt="Rólam" width="350" height="450
+        <img src="fotok/eszter5.jpg" alt="Rólam" width="350" height="450 margin: 10px 20px 30px 40px;
         " class="profile-photo">
-        <img src="fotok/eszter5.jpg" alt="Rólam" width="350" height="450
-        " class="profile-photo">
-        <img src="fotok/eszter1.jpg" alt="Rólam" width="600" height="450
-        " class="profile-photo">
-        
+        </div>
     </section>
 
     <section id="services">
@@ -89,15 +105,17 @@
         <span class="placeholder col-12 bg-dark"></span>
 
         <h2></h2>
-    
+    <div class="container">
         <img src="fotok/teso.jpg" alt="Kép 2023 karácsonyáról" width="350" height="450" class="service-photo">
         <img src="fotok/szulo.jpg" alt="Szalagavatómon készült kép 2023" width="350" height="450" class="service-photo">
         <img src="fotok/vili.jpg"  width="350" height="450" class="service-photo">
         <img src="fotok/pongo.jpg" width="350" height="450" class="service-photo">
+    </div>
         <p>Ahogy már fent olvashatta, egy klasszikusnál nagyobb családba születtem. </p>
+
     </section>
 
-    <section id="contact">
+    <section id="hobbi">
         <span class="placeholder col-12 bg-dark"></span>
         <h2>Hobbijaim</h2>
         <span class="placeholder col-12 bg-dark"></span>
@@ -131,9 +149,35 @@
         <img src="fotok/kaja1.jpg" width="350" height="450" alt="Kép 2">
         <img src="fotok/kaja2.jpg" width="350" height="450" alt="Kép 3">
         <img src="fotok/kaja3.jpg" width="350" height="450" alt="Kép 1">
+        <img src="fotok/kaja4.jpg" width="350" height="450" alt="Kép 1">
     </div>
-    
-
+    <p>Itt add meg az elérhetőségeidet, például e-mail címet vagy telefonszámot.</p>
+    <section id="alom">
+    <span class="placeholder col-12 bg-dark"></span>
+    <h2>Álmom</h2>
+    <span class="placeholder col-12 bg-dark"></span>
+        <div class="container">
+            <img src="fotok/hit2.jpg" width="350" height="450" alt="Kép 3">
+            <p>Itt add meg az elérhetőségeidet, például e-mail címet vagy telefonszámot.</p>
+            <img src="fotok/hit3.jpg" width="350" height="450" alt="Kép 1">
+        </div>
+        </section>
+    <section id="hit">
+    <span class="placeholder col-12 bg-dark"></span>
+    <h2>Hitem</h2>
+    <span class="placeholder col-12 bg-dark"></span>
+    <div class="container">
+        <img src="fotok/hit4.jpg" width="350" height="450" alt="Kép 1">
+        <img src="fotok/hit5.jpg" width="350" height="450" alt="Kép 1">
+        <img src="fotok/hit1.jpg" width="350" height="450" alt="Kép 2">
+        <img src="fotok/hit6.jpg" width="350" height="450" alt="Kép 2">
+    </div>
+    <div class="container">
+        <img src="fotok/hit2.jpg" width="350" height="450" alt="Kép 3">
+        <p>Itt add meg az elérhetőségeidet, például e-mail címet vagy telefonszámot.</p>
+        <img src="fotok/hit3.jpg" width="350" height="450" alt="Kép 1">
+    </div>
+    </section>
     <span class="placeholder col-12 bg-primary"></span>
     <span class="placeholder col-12 bg-secondary"></span>
     <span class="placeholder col-12 bg-success"></span>
@@ -142,16 +186,15 @@
     <span class="placeholder col-12 bg-info"></span>
     <span class="placeholder col-12 bg-light"></span>
     
-    <section id="map">
+    <section id="contact">
         <span class="placeholder col-12 bg-dark"></span>
         <h2>Elérhetőségeim:</h2>
         <span class="placeholder col-12 bg-dark"></span>
-
     </section>
     </div>
     <div class="container">
         <div class="card" style="width: 18rem; height: 20rem ;">
-        <div class="container">
+        <div class="cardimg">
             <img src="fotok/eszter4.jpg">
         </div>
             <div class="card-body">
@@ -161,7 +204,7 @@
             </div>
         </div>
         <div class="card" style="width: 18rem;height: 20rem;">
-            <div class="container">
+            <div class="cardimg">
                 <img src="fotok/eszter3.jpg">
             </div>
             <div class="card-body">
@@ -171,7 +214,7 @@
             </div>
         </div>
         <div class="card" style="width: 18rem;height: 20rem;">
-            <div class="container">
+            <div class="cardimg">
                 <img src="fotok/eszter7.jpg"width="100" height="200">
             </div>
             <div class="card-body">
