@@ -9,71 +9,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <style>
-        .container {
-            display: flex;
-            justify-content: space-around; /* Képek közötti távolság */
-            align-items: center; /* Függőleges középre igazítás */
-            padding: 20px;
-            margin: 10px 20px 30px 40px; /* Felül, jobbra, alul, balra */
-            /*border: 6px solid #ccc;*/
-        }
-        img {
-            max-width: 23%; /* Képek méretének beállítása */
-            height: auto; /* Magasság automatikus beállítása */
-            border-radius: 8px; /* Kerekített sarkok */
-        }
-        .cardimg  {  
-            align-items: center; /* Függőleges középre igazítás */
-            text-align: center; /* Kép középre igazítása */
-            align-items: center; /* Függőleges középre igazítás */
+    <div class="header">
+        <h1>Üdvözöllek a Bemutatkozó Oldalomon! <span class="badge text-bg-warning">Ismerj meg!</span></h1>
+    </div>
 
-            max-width: 200%; /* Képek méretének beállítása */
-            height: auto; /* Magasság automatikus beállítása */
-            display: flex; /* Flexbox aktiválása */
-            justify-content: center; /* Vízszintes középre igazítás */
-            align-items: center; /* Függőleges középre igazítás (opcionális) */
-            height: 100vh; /* 100% magasság a viewportban */
-            place-items: center; /* Vízszintes és függőleges középre igazítás */
-         }
-    </style>
-    <style>
-        body {
-            margin: 20px;
-            font-family: Arial, sans-serif; /* Betűtípus beállítása */
-            background-color: #6f9ad181; /* Háttérszín beállítása */
-        
-        }
-        .header {
-            background-image: url('fotok/fejlec.jpg'); /* Fejléc háttérkép */
-            background-size: cover; /* Kép méretezése */
-            background-position: center; /* Kép középre igazítása */
-            height: 500px; /* Fejléc magassága */
-            display: flex; /* Flexbox elrendezés */
-            align-items: flex-end;
-            color: white; /* Szöveg színe */
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Szöveg árnyék */
-        }
-        .btn { 
+    <div class="navbar-container d-flex justify-content-around">
+        <a class="btn btn-primary h-25" href="#about">Ki is vagyok én?</a>
+        <a class="btn btn-danger h-25" href="#fam">Családom és otthonom</a>
+        <a class="btn btn-info h-25" href="#hobbi">Hobbijaim</a>
+    </div>
 
-        }
-        p {
-            margin: 20px; /* Külső margó a szöveg körül */
-            padding: 10px; /* Belső margó a szöveg körül */
-        }
-    </style>
-    <header>
-        <header class="header">
-            <h1>Üdvözöllek a Bemutatkozó Oldalomon! <span class="badge text-bg-info">Ismerj meg!</span></h1>
-            <li><a class="btn btn-primary" href="#about"  >Ki is vagyok én?</a></li>
-            <li><a class="btn btn-danger" href="#fam">Családom és otthonom</a></li>
-            <li><a class="btn btn-info" href="#hobbi"   >Hobbijaim</a></li>
-            <li><a class="btn btn-primary" href="#alom"  >Az álmom</a></li>
-            <li><a class="btn btn-primary" href="#hit"  >Hitem</a></li>
-            <li><a class="btn btn-warning" href="#contact"    >Elérhetőségeim</a></li>
-        </header>
-        
-
+    <div class="navbar-container d-flex justify-content-around">
+        <a class="btn btn-primary h-25" href="#alom">Az álmom</a>
+        <a class="btn btn-primary h-25" href="#hit">Hitem</a>
+        <a class="btn btn-warning h-25" href="#contact">Elérhetőségeim</a>
+    </div>
+    
     <span class="placeholder col-12 bg-primary"></span>
     <span class="placeholder col-12 bg-secondary"></span>
     <span class="placeholder col-12 bg-success"></span>
@@ -82,103 +33,105 @@
     <span class="placeholder col-12 bg-info"></span>
     <span class="placeholder col-12 bg-light"></span>
     <span class="placeholder col-12 bg-dark"></span>
-    
-    </header>
 
-    <section id="about">
-        <h2>Ki is vagyok én?</h2>
-        <span class="placeholder col-12 bg-dark"></span>
-        <div class="container">
-            <img src="fotok/eszter2.jpg" alt="Rólam" width="350" height="450 margin: 10px 20px 30px 40px;
-        " class="profile-photo">
+    <h2>Ki is vagyok én?</h2>
+    <span class="placeholder col-12 bg-dark"></span>
+
+
+    <section class="section-container" id="about">
+            <img src="fotok/eszter2.jpg" alt="Rólam">
         <p>Kaló Eszter Krisztina vagyok, 19 éves és a 4 gyerekes család 3. gyermeke vagyok. Noszvajon élek a családommal és rengeteg állatainkkal. Nagyon szeretem a nagy családom és azt hiszem meghatározó is ezt az életemben. 
             Noszvajon élek amitóta eszemet tudom, ez az otthonom. 
             Idén kezdtem az egyetemet Budapesten a Budapesti Műszaki és Gazdaságtudományi Egyetemen. Választott szakom az Ipari termék- és formatervező mérnöki lett. 
             Azt hiszem az indok amiért ezt a szakot választottam, az a kreatív energiáim és a hatalamas tudásvágyam keveredése volt. Nagyon szeretek rajzolni és csak úgy valamit alkotni a kezemmel.
             Az életemnen továbba fotnos szerepet tölt be a hit. Szoktam szolgálni a noszvaji Református gyüleketebe és második otthonomnak is tekintem ezt a közösséget.
         </p>
-        <img src="fotok/eszter5.jpg" alt="Rólam" width="350" height="450 margin: 10px 20px 30px 40px;
-        " class="profile-photo">
+        <img src="fotok/eszter5.jpg" alt="Rólam">
         </div>
     </section>
 
-    <section id="services">
-        <span class="placeholder col-12 bg-dark"></span>
-        <h2>Családom és otthonom</h2>
-        <span class="placeholder col-12 bg-dark"></span>
-
-        <h2></h2>
-    <div class="container">
-        <img src="fotok/teso.jpg" alt="Kép 2023 karácsonyáról" width="350" height="450" class="service-photo">
-        <img src="fotok/szulo.jpg" alt="Szalagavatómon készült kép 2023" width="350" height="450" class="service-photo">
-        <img src="fotok/vili.jpg"  width="350" height="450" class="service-photo">
-        <img src="fotok/pongo.jpg" width="350" height="450" class="service-photo">
-    </div>
-        <p>Ahogy már fent olvashatta, egy klasszikusnál nagyobb családba születtem. </p>
-
+    <span class="placeholder col-12 bg-dark"></span>
+    <h2>Családom és otthonom</h2>
+    <span class="placeholder col-12 bg-dark"></span>
+    <section class="section-container" id="fam">
+        <p>Itt add meg az elérhetőségeidet, például e-mail címet vagy telefonszámot.</p>
+    </section>
+    <section class="section-container" id="services">
+        <img src="fotok/teso.jpg" alt="Kép 2023 karácsonyáról" class="service-photo">
+        <img src="fotok/szulo.jpg" alt="Szalagavatómon készült kép 2023" class="service-photo">
+        <img src="fotok/vili.jpg"  >
+        <img src="fotok/pongo.jpg">
     </section>
 
-    <section id="hobbi">
-        <span class="placeholder col-12 bg-dark"></span>
-        <h2>Hobbijaim</h2>
-        <span class="placeholder col-12 bg-dark"></span>
+    <span class="placeholder col-12 bg-dark"></span>
+    <h2>Hobbijaim</h2>
+    <span class="placeholder col-12 bg-dark"></span>
+    <section class="section-container" id="hobbi">
         <p>Itt add meg az elérhetőségeidet, például e-mail címet vagy telefonszámot.</p>
     </section>
     
-    <div class="container">
-        <img src="fotok/kertesz1.jpg" width="350" height="450" alt="Kép 2">
-        <img src="fotok/kertesz2.jpg" width="350" height="450" alt="Kép 3">
-        <img src="fotok/kertesz11.jpg" width="350" height="450" alt="Kép 1">
-        <img src="fotok/kertesz7.jpg" width="350" height="450" alt="Kép 1">
-
-
+    <div class="section-container">
+        <img src="fotok/kertesz1.jpg" alt="Kép 2">
+        <img src="fotok/kertesz2.jpg" alt="Kép 3">
+        <img src="fotok/kertesz11.jpg" alt="Kép 1">
+        <img src="fotok/kertesz7.jpg" alt="Kép 1">
     </div>
-    <div class="container">
+    <div class="section-container">
         <img src="fotok/kertesz4.jpg" alt="Kép 1">
         <img src="fotok/kertesz5.jpg" alt="Kép 2">
         <img src="fotok/kertesz10.jpg" alt="Kép 1">
         <img src="fotok/kertesz8.jpg"  alt="Kép 1">
+    </div>
+    <section class="section-container">
+        <p>Itt add meg az elérhetőségeidet, például e-mail címet vagy telefonszámot.</p>
+    </section>
 
+    <div class="section-container">
+        <img src="fotok/lo.jpg" alt="Kép 2">
+        <img src="fotok/lo5.jpg" alt="Kép 3">
+        <img src="fotok/lo2.jpg" alt="Kép 1">
+        <img src="fotok/lo6.jpg" alt="Kép 1">
     </div>
-    <p>Itt add meg az elérhetőségeidet, például e-mail címet vagy telefonszámot.</p>
-    <div class="container">
-        <img src="fotok/lo.jpg" width="350" height="450" alt="Kép 2">
-        <img src="fotok/lo5.jpg" width="350" height="450" alt="Kép 3">
-        <img src="fotok/lo2.jpg" width="350" height="450" alt="Kép 1">
-        <img src="fotok/lo6.jpg" width="350" height="450" alt="Kép 1">
+    <section class="section-container">
+        <p>Itt add meg az elérhetőségeidet, például e-mail címet vagy telefonszámot.</p>
+    </section>
+
+    <div class="section-container">
+        <img src="fotok/kaja1.jpg" alt="Kép 2">
+        <img src="fotok/kaja2.jpg" alt="Kép 3">
+        <img src="fotok/kaja3.jpg" alt="Kép 1">
+        <img src="fotok/kaja4.jpg" alt="Kép 1">
     </div>
-    <p>Itt add meg az elérhetőségeidet, például e-mail címet vagy telefonszámot.</p>
-    <div class="container">
-        <img src="fotok/kaja1.jpg" width="350" height="450" alt="Kép 2">
-        <img src="fotok/kaja2.jpg" width="350" height="450" alt="Kép 3">
-        <img src="fotok/kaja3.jpg" width="350" height="450" alt="Kép 1">
-        <img src="fotok/kaja4.jpg" width="350" height="450" alt="Kép 1">
-    </div>
-    <p>Itt add meg az elérhetőségeidet, például e-mail címet vagy telefonszámot.</p>
-    <section id="alom">
+    <section class="section-container">
+        <p>Itt add meg az elérhetőségeidet, például e-mail címet vagy telefonszámot.</p>
+    </section>
+
     <span class="placeholder col-12 bg-dark"></span>
     <h2>Álmom</h2>
     <span class="placeholder col-12 bg-dark"></span>
-        <div class="container">
-            <img src="fotok/hit2.jpg" width="350" height="450" alt="Kép 3">
+    <section id="alom">
+        <div class="section-container">
+            <img src="fotok/hit2.jpg" alt="Kép 3">
             <p>Itt add meg az elérhetőségeidet, például e-mail címet vagy telefonszámot.</p>
-            <img src="fotok/hit3.jpg" width="350" height="450" alt="Kép 1">
+            <img src="fotok/hit3.jpg" alt="Kép 1">
         </div>
-        </section>
-    <section id="hit">
+    </section>
+
     <span class="placeholder col-12 bg-dark"></span>
     <h2>Hitem</h2>
     <span class="placeholder col-12 bg-dark"></span>
-    <div class="container">
-        <img src="fotok/hit4.jpg" width="350" height="450" alt="Kép 1">
-        <img src="fotok/hit5.jpg" width="350" height="450" alt="Kép 1">
-        <img src="fotok/hit1.jpg" width="350" height="450" alt="Kép 2">
-        <img src="fotok/hit6.jpg" width="350" height="450" alt="Kép 2">
+    <section id="hit">
+
+    <div class="section-container">
+        <img src="fotok/hit4.jpg" alt="Kép 1">
+        <img src="fotok/hit5.jpg" alt="Kép 1">
+        <img src="fotok/hit1.jpg" alt="Kép 2">
+        <img src="fotok/hit6.jpg" alt="Kép 2">
     </div>
-    <div class="container">
-        <img src="fotok/hit2.jpg" width="350" height="450" alt="Kép 3">
+    <div class="section-container">
+        <img src="fotok/hit2.jpg" alt="Kép 3">
         <p>Itt add meg az elérhetőségeidet, például e-mail címet vagy telefonszámot.</p>
-        <img src="fotok/hit3.jpg" width="350" height="450" alt="Kép 1">
+        <img src="fotok/hit3.jpg" alt="Kép 1">
     </div>
     </section>
     <span class="placeholder col-12 bg-primary"></span>
@@ -186,7 +139,7 @@
     <span class="placeholder col-12 bg-success"></span>
     <span class="placeholder col-12 bg-danger"></span>
     <span class="placeholder col-12 bg-warning"></span>
-    <span class="placeholder col-12 bg-info"></span>
+    <span class="placeholder col-12 bg-info"></span> 
     <span class="placeholder col-12 bg-light"></span>
     
     <section id="contact">
@@ -195,40 +148,159 @@
         <span class="placeholder col-12 bg-dark"></span>
     </section>
     </div>
-    <div class="container">
-        <div class="card" style="width: 18rem; height: 20rem ;">
-        <div class="cardimg">
-            <img src="fotok/eszter4.jpg">
-        </div>
+    <div class="card-container">
+        <div class="card">
             <div class="card-body">
-              <p class="card-text">Ha szeretnék naprakészen nyomonkövetni az életem, akkor kövess be instagrammon!</p>
-              <img src="fotok/instalogo.webp"  width="40" height="40">
-              <a href="https://www.instagram.com/kaloeszter_17/" class="btn btn-primary">Itt tudsz bekövetni!</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;height: 20rem;">
-            <div class="cardimg">
-                <img src="fotok/eszter3.jpg">
-            </div>
-            <div class="card-body">
-              <p class="card-text">Ha szeretnék naprakészen nyomonkövetni az életem, akkor jelölj be facebookon!</p>
-              <img src="fotok/face.jpg"  width="40" height="40">
-              <a href="https://www.facebook.com/eszter.kalo.5/?locale=hu_HU" class="btn btn-primary">Itt tudsz bekövetni!</a>
+                <img class="cardimg" src="fotok/eszter4.jpg">
+                <p class="card-text">Ha szeretnék naprakészen nyomonkövetni az életem, akkor kövess be instagrammon!</p>
+                <div class="d-flex justify-content-around align-items-center">
+                    
+                    <a href="https://www.instagram.com/kaloeszter_17/" class="btn btn-primary">
+                        <img class="socialimg" src="fotok/instalogo.webp">
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="card" style="width: 18rem;height: 20rem;">
-            <div class="cardimg">
-                <img src="fotok/eszter7.jpg"width="100" height="200">
-            </div>
+        <div class="card">
             <div class="card-body">
+                <img class="cardimg" src="fotok/eszter3.jpg">
+                <p class="card-text">Ha szeretnék naprakészen nyomonkövetni az életem, akkor jelölj be facebookon!</p>
+                <div class="d-flex justify-content-around align-items-center">
+                    <a href="https://www.facebook.com/eszter.kalo.5/?locale=hu_HU" class="btn btn-primary">
+                        <img class="socialimg" src="fotok/face.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+              <img class="cardimg" src="fotok/eszter7.jpg">
               <p class="card-text">Ha szeretnék naprakészen nyomonkövetni az életem, akkor kövess be pinteresten!</p>
-              <img src="fotok/pinterest.png"  width="40" height="40">
-              <a href="https://hu.pinterest.com/esztokalo/" class="btn btn-primary">Itt tudsz bekövetni!</a>
+              <div class="d-flex justify-content-around align-items-center">
+                
+                <a href="https://hu.pinterest.com/esztokalo/" class="btn btn-primary">
+                    <img class="socialimg" src="fotok/pinterest.png">
+                </a>
+              </div>
             </div>
         </div>
     </div>
     <footer>
         <p>&copy; 2024 Kaló Eszter - Minden jog fenntartva.</p>
     </footer>
+    <style>
+        body {
+            width: 100% !important;
+            background-color: #ADD8E6;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 250px;
+
+            .card {
+                width: 20%;
+                margin: 5px;
+                height: 250px;
+                .card-body {
+                    display: flex;
+                    flex: 1 1;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    .cardimg {
+                        width: 100px;
+                        height: 100px;
+                        object-fit: cover;
+                    }
+
+                    .socialimg {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+
+        img {
+            border-radius: 8px; /* Kerekített sarkok */
+        }
+        .header {
+            width: 100%;
+            background-image: url('fotok/fejlec.jpg'); /* Fejléc háttérkép */
+            background-size: cover; /* Kép méretezése */
+            background-position: center; /* Kép középre igazítása */
+            height: 300px; /* Fejléc magassága */
+            display: flex; /* Flexbox elrendezés */
+            align-items: center;
+            justify-content: center;
+            color: white; /* Szöveg színe */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Szöveg árnyék */
+            font-style: italic;
+        }
+
+        .navbar-container {
+            margin-top: 10px;
+            width: 100%;
+            .btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 32%;
+                max-width: 32%;
+                word-wrap: break-word;
+                overflow: hidden;
+                height: 65px !important;
+                
+            }
+        }
+
+        @media (max-width : 770px) {
+            .section-container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around; /* Képek közötti távolság */
+                align-items: center; /* Függőleges középre igazítás */
+                /*border: 6px solid #ccc;*/
+                img {
+                    width: 90%;
+                    margin: 5px;
+                }
+
+                p {
+                    width: 90%;
+                    margin: 5px;
+                }
+            }
+        }
+
+        @media (min-width : 771px) {
+            .section-container {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around; /* Képek közötti távolság */
+                align-items: center; /* Függőleges középre igazítás */
+                padding: 20px;
+                /*border: 6px solid #ccc;*/
+                img {
+                    max-width: 30%;
+                    min-width: 20%;
+                    height: 400px;
+                    object-fit: cover;
+                    margin: 5px;
+                }
+
+                p {
+                    margin: 5px;
+                }
+            }
+        }
+
+    </style>
 </body>
 </html>
