@@ -92,7 +92,7 @@ img {
         }
 
         p {
-            width: 90%;
+            width: 80%;
             margin: 5px;
         }
     }
@@ -139,7 +139,7 @@ img {
     padding-left: 90%;
 }
 
-p { font-size: 15px;
+p { font-size: 12px;
     font-weight: bold !important;
     font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
@@ -151,7 +151,4 @@ h1,h2,h3,h4,h5,h6{
 }
 .rendez{
     align-items:baseline;
-}
-.cv-selection{
-    align-items: center; /* Függőleges középre igazítás */
 }
