@@ -1,6 +1,6 @@
 body {
     width: 100% !important;
-    background-color: #538ea1a6;
+    background-color: #538ea1a6 !important;
 }
 
 footer {
@@ -116,4 +116,27 @@ img {
             margin: 5px;
         }
     }
+}
+
+.btn-ligh{
+    background-color: #b484a2;
+}
+.btn-success{
+    background-color: #618b64;
+}
+.btn-warning{
+    background-color: #d66b07a6;
+}
+
+.lebeg {
+    position: sticky;
+    z-index: 1000;
+    top: 90%;
+    padding-left: 90%;
+}
+
+.kek {
+    background-color:rgb(42, 43, 94);
+    text-shadow: 1px 1px 2px rgba(14, 2, 48, 0.7); /* Szöveg árnyék */
+    font-size: 30px;
 }
