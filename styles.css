@@ -16,7 +16,9 @@ footer {
     align-items: center;
     width: 100%;
     height: 400px;
-    
+    .card-body{
+    background-color: rgba(231, 191, 12, 0.685);
+    }
 
     .card {
         width: 35%;
