@@ -44,8 +44,7 @@ footer {
 
 img {
     border-radius: 8px; /* Kerekített sarkok */
-    border-image:space;
-    border-color:#b484a2;
+    border: 10px rgb(190, 125, 136) !important;
 }
 .header {
     width: 100%;
